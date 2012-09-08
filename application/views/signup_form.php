@@ -1,18 +1,10 @@
 <html>
 <head>
 	<title>Welcome to Ego</title>
-    <link rel="stylesheet" href="http://egodecal.com/css/style_main.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 </head> 
 <body>
-<div id="strip">
-<div id="strip_content">
-<img id="strip_head" src="http://www.egodecal.com/icons/ego.png" /><p id="strip_head">Ego</p>
-</div>
-<div id="strip_overlay"></div>
-</div>
-<div id="container">
 <div id="signup_form">
 
 <h1>Create an Account</h1>
@@ -39,7 +31,6 @@
 <?php echo validation_errors('<p class="error">'); ?>
 </fieldset>
 
-</div>
 </div>
 </body>
 </html>

@@ -166,10 +166,13 @@
 				type: $(this).attr('method'),
 				url: $(this).attr('action'),
 				success: function(data){
-					if (data.substring(0, 3) == '<li'){
+					if (data.substring(0, 3) == '/si'){
+						window.location = data;
+						/*
 						$('#feedList').append(data);
 						$('#right_addbox').hide();
 						addbox_flag = false;
+						*/
 					} else{
 						$('#addFeedInterestMessage').html('<div class="rightToolboxMessage">'+data+'</div>');	
 					}

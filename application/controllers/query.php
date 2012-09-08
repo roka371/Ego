@@ -18,7 +18,8 @@ class Query extends CI_Controller{
 		$this->load->model('query_model');
 		$result = $this->query_model->add_feed($keyword, $url, 'keyword');
 		if (is_int($result)){
-			echo '<li class="rightList"><a href="/site/feed/'.$result.'">'.$keyword.'</a></li>';
+			//echo '<li class="rightList"><a href="/site/feed/'.$result.'">'.$keyword.'</a></li>';
+			echo '/site/feed/'.$result;
 		} else{
 			echo $result;
 		}
